@@ -2,6 +2,8 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="alturaimagen">100dp</dimen>
     <dimen name="detalleimagenaltura">170dp</dimen>
-    <dimen name="colapse">160dp</dimen>
+    <dimen name="colapse">200dp</dimen>
     <dimen name="line">1dp</dimen>
+    <dimen name="imagen">170dp</dimen>
+    <dimen name="colapsebar">160dp</dimen>
 </resources>

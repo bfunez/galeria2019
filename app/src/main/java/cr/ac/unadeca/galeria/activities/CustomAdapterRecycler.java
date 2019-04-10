@@ -48,6 +48,7 @@ public class CustomAdapterRecycler extends RecyclerView.Adapter<ImagenViewHolder
     @Override
     public void onBindViewHolder(@NonNull ImagenViewHolder viewHolder, int i) {
         final Imagenes dataModel = dataSet.get(i);
+
         viewHolder.imagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +62,7 @@ public class CustomAdapterRecycler extends RecyclerView.Adapter<ImagenViewHolder
         viewHolder.comentarios.setText(dataModel.imagen);
     }
 
+
     private void abrirImagen(Imagenes imagenes){
         try{
             Intent abrirImagen = new Intent(mContext, DetalleActivity.class);
@@ -70,6 +72,8 @@ public class CustomAdapterRecycler extends RecyclerView.Adapter<ImagenViewHolder
             Snackbar.make(view, e.getMessage(), Snackbar.LENGTH_INDEFINITE).show();
         }
     }
+
+
 
     @Override
     public int getItemCount() {

@@ -23,11 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".activities.DetalleActivity"
-            android:label="@string/detalleimagen"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activities.DetalleActivity"
+            android:label="@string/app_detalle"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity"/>
         </activity>
     </application>
 
