@@ -29,9 +29,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/descripcion"
             android:text="@string/titulolista"
             android:textStyle="bold"
+            android:id="@+id/descripcion"
             android:textAppearance="?android:textAppearanceLarge"/>
         <View
             android:layout_width="@dimen/alturaimagen"
@@ -49,9 +49,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/comentarios"
             android:text="@string/titulolista"
             android:textStyle="bold"
+            android:id="@+id/comentarios"
             android:textAppearance="?android:textAppearanceLarge"/>
         <View
             android:layout_width="@dimen/alturaimagen"
@@ -73,6 +73,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="@dimen/alturaimagen"
                 android:layout_weight="0.9"
+                android:id="@+id/txtcomentario"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_width="match_parent"
@@ -84,6 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
+                android:id="@+id/agregar"
                 android:text="@string/agregar"/>
         </LinearLayout>
     </LinearLayout>
